@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Formulário de pesquisa</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+    <body>
+        <h1 id="title">Formulário de pesquisa</h1>
+            <p id="description">Obrigado por contribuir com a coleta de dados</p>
+            <form id="survey-form">
+
+        <fieldset>
+            <label id="name-label">Nome: <input id="name" type="text" placeholder="Nome e sobrenome" required></input></label>
+            <label id="email-label">Email: <input id="email" type="email" placeholder="code@email.com" required></input></label>
+            <label id="number-label">Idade: <input id="number" type="number" min="13" max="120" placeholder="13 - 120" required></input></label>
+        </fieldset>
+
+        <fieldset>
+            <label>Qual rede social você mais usa?
+                <select id="dropdown">
+                <option value="">(select one)</option>
+                <option value="1">Instagram</option>
+                <option value="2">YouTube</option>
+                <option value="3">Facebook</option>
+                </select>
+            </label>
+        </fieldset>
+
+        <fieldset>
+            <label>Qual dispositivo você mais usa?</label>
+                <label><input type="radio" name="device" value="1"> Celular</label>
+                <label><input type="radio" name="device" value="2"> Computador</label>
+        </fieldset>
+
+        <fieldset>
+            <label>Qual periodo do dia você mais fica nas redes sociais?</label>
+                <label><input type="checkbox" name="time" value="0"> Manhã</label>
+                <label><input type="checkbox" name="time" value="1"> Tarde</label>
+                <label><input type="checkbox" name="time" value="2"> Noite</label>
+        </fieldset>
+ 
+        <fieldset>
+            <label>Comentários adcionais
+                <textarea name="adicionais" rows="2" cols="30" placeholder="Informações extras"></textarea>
+            </label>
+        </fieldset>
+
+        <fieldset>
+            <input id="submit" type="submit" value="Submit">
+        </fieldset>
+        
+      </form>
+    </body>
+  </html>
